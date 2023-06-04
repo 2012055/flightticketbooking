@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Ticket Booking</title>
+  <style>
+    header,button {
+      background-color:dodgerblue;
+      padding: 5px;
+      color: #fff;
+      text-align: center;
+    }
+    form{
+      font-size: medium;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      position: absolute;
+      top: 200px;
+      font-size: large;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>View booking Details</h1>
+  </header>
+
+ 
+      <form method="post" action="flightadminbooking.php">
+       Enter flight number: <input type="text" id="flightnumber" name="flightnumber" placeholder="Type flightnumber" required>
+      <br>
+      <br>
+       Choose time: 
+       <select id="time" name="time" required>
+        <option  value="" disabled selected>Select your time</option>
+        <option value="12:05">12:05</option>
+        <option value="14:05">14:05</option>
+        <option value="18:50">18:50</option>
+        <option value="09:15">09:15</option>
+        <option value="23:50">23:50</option>
+        <option value="04:10">04:10</option>
+      </select>
+      <br>
+      <br>
+      <button>View bookings</button>
+      </form>
+  <!-- Content of the pages goes here
+  <img src="flightimg.jpg" width="1330"> -->
+  
+</body>
+</html>

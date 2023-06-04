@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Ticket Booking</title>
+  <style>
+    /* Header styles */
+    header {
+      background-color:dodgerblue;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Navigation styles */
+    nav {
+      background-color: #f5f5f5;
+      padding: 10px;
+      text-align: center;
+      font-size: larger;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav p{
+       font-size: medium;
+       font-weight: bold;
+    }
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav ul li a:hover {
+      background-color: #ddd;
+    }
+    form{
+      font-size: medium;
+      font-family: cursive;
+      position: absolute;
+      top: 280px;
+      font-size: large;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Flight Ticket Booking</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="flightuser.html">Home</a></li>
+      <li><a href="flightuserticketbook.html">Book Tickets</a></li>
+      <li><a href="flightavailablelist.php">Available flight list</a></li>
+      <li><a href="flightmybooking.html">My Bookings</a></li>
+      <li><a href="flightloginpage.html">Logout</a></li>
+      <form method="post" action="flightsearchavailable.php">
+       Search for available flights : <input type="date" id="date" name="date" placeholder="Type date">
+       <select id="time" name="time" >
+        <option>Choose your time</option>
+        <option value="12:05">12:05</option>
+        <option value="14:05">14:05</option>
+        <option value="18:50">18:50</option>
+        <option value="09:15">09:15</option>
+        <option value="23:50">23:50</option>
+        <option value="04:10">04:10</option>
+      </select>
+      <button>search</button>
+      </form>
+    </ul>
+  </nav>
+  <!-- Content of the pages goes here -->
+  <img src="flightimg.jpg" width="1330">
+  <nav>
+      <p>Copyrights @Manobharathi</p>
+
+  </nav>
+  
+</body>
+</html>
